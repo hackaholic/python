@@ -4,13 +4,14 @@ def pivot(start: int, end: int) -> int:
 
     i,j = start, start
     print(i,j, end)
-    while j<=end:
+    while j<end:
         if arr[j] <= p_val:
             arr[j], arr[i] = arr[i], arr[j]
-            i += 1
-        j += 1
+            i +=1
+        j +=1
     
-    arr[j], arr[i] = arr[i], arr[j]
+    arr[i], arr[end] = arr[end], arr[i]
+
     return i
 
 

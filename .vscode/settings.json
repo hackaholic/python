@@ -1,5 +1,6 @@
 {
     "python.analysis.autoImportCompletions": false,
     "python.languageServer": "Pylance",
-    "python.autoComplete.extraPaths": ["/opt/anaconda3/bin/python"]
+    "python.defaultInterpreterPath": "${workspaceFolder}/.venv/bin/python3",
+    "python.autoComplete.extraPaths": ["${workspaceFolder}/.venv/lib/python3.*/site-packages",".venv/bin/python"]
 }
